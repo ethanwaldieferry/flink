@@ -585,6 +585,9 @@ You can customize the Flink image in several ways:
     # enable a custom plugin
     ln -fs /mnt/custom_plugin.jar /opt/flink/plugins/custom_plugin/
 
+    # enable pyflink
+    ln -fs /opt/flink/opt/flink-python-*.jar /opt/flink/lib/
+
     /docker-entrypoint.sh <jobmanager|standalone-job|taskmanager>
     " > custom_entry_point_script.sh
 
